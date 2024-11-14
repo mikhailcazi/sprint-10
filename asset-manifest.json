@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/speedracer/static/css/main.de736a89.css",
+    "main.js": "/speedracer/static/js/main.76ce38f3.js",
+    "static/js/453.373f73e0.chunk.js": "/speedracer/static/js/453.373f73e0.chunk.js",
+    "index.html": "/speedracer/index.html",
+    "main.de736a89.css.map": "/speedracer/static/css/main.de736a89.css.map",
+    "main.76ce38f3.js.map": "/speedracer/static/js/main.76ce38f3.js.map",
+    "453.373f73e0.chunk.js.map": "/speedracer/static/js/453.373f73e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de736a89.css",
+    "static/js/main.76ce38f3.js"
+  ]
+}
