@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import background from "../../assets/images/background.png";
 import { useSelector } from "react-redux";
-
 export default function Background() {
+  const speed = useSelector((store) => store.car.speed);
+
   const distance = 10;
   const WIDTH = 612;
-  const speed = useSelector((state) => state.car.speed);
 
   const [pos1, setPos1] = useState(0);
   const [pos2, setPos2] = useState(WIDTH);
@@ -20,17 +21,17 @@ export default function Background() {
     <>
       <img
         className="bg-image"
-        src="images/background.png"
+        src={background}
         style={{ left: pos1 + "px" }}
       ></img>
       <img
         className="bg-image"
-        src="images/background.png"
+        src={background}
         style={{ left: pos2 + "px" }}
       ></img>
       <img
         className="bg-image"
-        src="images/background.png"
+        src={background}
         style={{ left: pos3 + "px" }}
       ></img>
 

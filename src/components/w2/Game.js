@@ -10,7 +10,7 @@ export default function Game() {
         <Car />
         <Background />
       </div>
-      <div style={{ position: "absolute", top: "50%" }}>
+      <div style={{ position: "absolute", top: "475px" }}>
         <Controls />
       </div>
     </>
