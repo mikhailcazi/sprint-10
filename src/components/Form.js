@@ -1,5 +1,6 @@
-import { useReducer, useState } from "react";
+import { useContext, useReducer, useState } from "react";
 import { formReducer } from "../state/formReducer";
+import { ThemeContext } from "../context/themeContext";
 
 export default function Form() {
   const initState = {
@@ -19,11 +20,14 @@ export default function Form() {
   const setInput = (key, value) =>
     dispatch({ type: "SET_INPUT", payload: { key, value } });
 
+  const theme = useContext(ThemeContext);
   return (
     <form onSubmit={handleSubmit}>
       <div>
+        <p>Theme: {theme}</p>
         <label>Name:</label>
         <input
+          className={theme === "dark" ? "input-dark" : "input-light"}
           type="text"
           value={state.name}
           onChange={(e) => setInput("name", e.target.value)}
